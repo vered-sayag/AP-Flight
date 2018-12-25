@@ -17,7 +17,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vered/CLionProjects/AP4/connectCommand.cpp" "/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/AP4.dir/connectCommand.cpp.o"
   "/home/vered/CLionProjects/AP4/equalBindCommand.cpp" "/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/AP4.dir/equalBindCommand.cpp.o"
   "/home/vered/CLionProjects/AP4/equalCommand.cpp" "/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/AP4.dir/equalCommand.cpp.o"
-  "/home/vered/CLionProjects/AP4/exitCommand.cpp" "/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/AP4.dir/exitCommand.cpp.o"
   "/home/vered/CLionProjects/AP4/lexer.cpp" "/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/AP4.dir/lexer.cpp.o"
   "/home/vered/CLionProjects/AP4/main.cpp" "/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/AP4.dir/main.cpp.o"
   "/home/vered/CLionProjects/AP4/parser.cpp" "/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/AP4.dir/parser.cpp.o"

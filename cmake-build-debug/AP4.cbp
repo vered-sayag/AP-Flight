@@ -172,12 +172,6 @@
 		<Unit filename="/home/vered/CLionProjects/AP4/equalCommand.h">
 			<Option target="AP4"/>
 		</Unit>
-		<Unit filename="/home/vered/CLionProjects/AP4/exitCommand.cpp">
-			<Option target="AP4"/>
-		</Unit>
-		<Unit filename="/home/vered/CLionProjects/AP4/exitCommand.h">
-			<Option target="AP4"/>
-		</Unit>
 		<Unit filename="/home/vered/CLionProjects/AP4/lexer.cpp">
 			<Option target="AP4"/>
 		</Unit>

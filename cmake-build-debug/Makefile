@@ -474,33 +474,6 @@ equalCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/AP4.dir/build.make CMakeFiles/AP4.dir/equalCommand.cpp.s
 .PHONY : equalCommand.cpp.s
 
-exitCommand.o: exitCommand.cpp.o
-
-.PHONY : exitCommand.o
-
-# target to build an object file
-exitCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/AP4.dir/build.make CMakeFiles/AP4.dir/exitCommand.cpp.o
-.PHONY : exitCommand.cpp.o
-
-exitCommand.i: exitCommand.cpp.i
-
-.PHONY : exitCommand.i
-
-# target to preprocess a source file
-exitCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/AP4.dir/build.make CMakeFiles/AP4.dir/exitCommand.cpp.i
-.PHONY : exitCommand.cpp.i
-
-exitCommand.s: exitCommand.cpp.s
-
-.PHONY : exitCommand.s
-
-# target to generate assembly for a file
-exitCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/AP4.dir/build.make CMakeFiles/AP4.dir/exitCommand.cpp.s
-.PHONY : exitCommand.cpp.s
-
 lexer.o: lexer.cpp.o
 
 .PHONY : lexer.o
@@ -711,9 +684,6 @@ help:
 	@echo "... equalCommand.o"
 	@echo "... equalCommand.i"
 	@echo "... equalCommand.s"
-	@echo "... exitCommand.o"
-	@echo "... exitCommand.i"
-	@echo "... exitCommand.s"
 	@echo "... lexer.o"
 	@echo "... lexer.i"
 	@echo "... lexer.s"

@@ -14,4 +14,6 @@ void WhileCommand::doCommand(int index, vector <string> lex) {;
     while (condition->calculate()) {
         parser(data, Whilelex);
     }
+
+    delete (condition);
 }

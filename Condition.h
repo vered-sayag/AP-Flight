@@ -18,7 +18,13 @@ protected:
     vector<string> lexCondition;
     int start_right;
     int start_left;
+    double op1;
+    double op2;
 
+    bool calculateExpression(){
+        op1 = shuntingYard(dataBase, lexCondition, start_left)[0];
+        op2 = shuntingYard(dataBase, lexCondition, start_right)[0];
+    }
 
 public:
     Condition(DataBase *data, vector<string> lexC, int start_L, int start_R) {
@@ -28,6 +34,7 @@ public:
         start_left = start_L;
     }
 
+
     virtual bool calculate() = 0;
 };
 
@@ -36,8 +43,7 @@ public:
     BigCondition(DataBase *data, vector<string> lexC,  int start_L, int start_R) : Condition(data, lexC, start_L,
                                                                                             start_R) {};
     bool calculate() {
-        double op1 = shuntingYard(dataBase, lexCondition, start_left)[0];
-        double op2 = shuntingYard(dataBase, lexCondition, start_right)[0];
+        calculateExpression();
         return op1 > op2;
 
     }
@@ -48,8 +54,7 @@ public:
                                                                                             start_R) {};
 
     bool calculate() {
-        double op1 = shuntingYard(dataBase, lexCondition, start_left)[0];
-        double op2 = shuntingYard(dataBase, lexCondition, start_right)[0];
+        calculateExpression();
         return op1 >= op2;
 
     }
@@ -60,8 +65,7 @@ public:
                                                                                             start_R) {};
 
     bool calculate() {
-        double op1 = shuntingYard(dataBase, lexCondition, start_left)[0];
-        double op2 = shuntingYard(dataBase, lexCondition, start_right)[0];
+        calculateExpression();
         return op1 < op2;
 
     }
@@ -72,8 +76,7 @@ public:
                                                                                                  start_R) {};
 
     bool calculate() {
-        double op1 = shuntingYard(dataBase, lexCondition, start_left)[0];
-        double op2 = shuntingYard(dataBase, lexCondition, start_right)[0];
+        calculateExpression();
         return op1 <= op2;
 
     }
@@ -85,8 +88,7 @@ public:
                                                                                               start_R) {};
 
     bool calculate() {
-        double op1 = shuntingYard(dataBase, lexCondition, start_left)[0];
-        double op2 = shuntingYard(dataBase, lexCondition, start_right)[0];
+        calculateExpression();
         return op1 != op2;
 
     }
@@ -97,8 +99,7 @@ public:
                                                                                                    start_R) {};
 
     bool calculate() {
-        double op1 = shuntingYard(dataBase, lexCondition, start_left)[0];
-        double op2 = shuntingYard(dataBase, lexCondition, start_right)[0];
+        calculateExpression();
         return op1 == op2;
     }
 };

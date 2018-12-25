@@ -16,6 +16,7 @@ void ODSCommand::doCommand(int index, vector <string> lex) {
     params->data = data;
     pthread_t trid2;
     pthread_create(&trid2, nullptr, thread_OpenDataserver, params);
+    while (!params->data->isConect()){}
 }
 
 

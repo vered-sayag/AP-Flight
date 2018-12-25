@@ -14,4 +14,5 @@ void IfCommand::doCommand(int index, vector<string> lex) {
     if (condition->calculate()) {
         parser(data, IFlex);
     }
+    delete (condition);
 }

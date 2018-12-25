@@ -35,5 +35,8 @@ struct openDataServerParams
 
 void* thread_OpenDataserver(void* arg);
 void* thread_Connect(void* arg);
+vector <string> splitByComma(string str);
+void setInputSymbols(const string &line, DataBase *data);
+
 
 #endif //AP3_OPENDATASERVERTHREAD_H

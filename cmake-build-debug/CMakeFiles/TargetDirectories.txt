@@ -1,0 +1,3 @@
+/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/AP4.dir
+/home/vered/CLionProjects/AP4/cmake-build-debug/CMakeFiles/edit_cache.dir

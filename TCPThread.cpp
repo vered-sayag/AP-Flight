@@ -69,7 +69,7 @@ void* thread_Connect(void* arg){
             double value = toSend.begin()->second;
 
             // creating the message
-            string message = "set " + path + " " + to_string(value) + "\r\n";
+            string message = "set " + path.substr(1,path.size()-2) + " " + to_string(value) + "\r\n";
 
             ssize_t n;
 
@@ -158,7 +158,7 @@ void* thread_OpenDataserver(void* arg) {
     newsockfd = accept(socketFd, (struct sockaddr*)&cli_addr, (socklen_t*)&clilen);
     cout<<"conect"<<endl;
 
-    params->data->conect();
+
     params->data->addSocket(newsockfd);
 
 //    std::cout << "connected to client!" << std::endl;
@@ -187,6 +187,7 @@ void* thread_OpenDataserver(void* arg) {
                 {
                     if (dataStr.length() > 0)
                     {
+                        params->data->conect();
                         //std::cout << "new data received: " << dataStr << std::endl;
                         setInputSymbols(dataStr, params->data);
                         this_thread::sleep_for(chrono::milliseconds(params->NumToSec));

@@ -94,7 +94,7 @@ bool DataBase::isBindVar(const string &sym) {
 
 map<string, double> DataBase::getSend() {
     map<string, double> temp;
-    temp[send.begin()->first] = send.begin()->second;
+    temp =*send.begin();
     send.erase(send.begin());
     return temp;
 }

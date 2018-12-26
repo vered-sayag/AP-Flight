@@ -12,16 +12,6 @@ vector
 string
 -
 
-/home/vered/CLionProjects/AP4/Condition.h
-vector
--
-string
--
-DataBase.h
-/home/vered/CLionProjects/AP4/DataBase.h
-Shunting_Yard.h
-/home/vered/CLionProjects/AP4/Shunting_Yard.h
-
 /home/vered/CLionProjects/AP4/DataBase.h
 string
 -
@@ -58,6 +48,41 @@ Expression.h
 bits/stdc++.h
 -
 
+<<<<<<< HEAD
+=======
+/home/vered/CLionProjects/AP4/TCPThread.cpp
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+string
+-
+vector
+-
+netdb.h
+-
+unistd.h
+-
+netinet/in.h
+-
+string.h
+-
+sys/socket.h
+-
+regex
+-
+TCPThread.h
+/home/vered/CLionProjects/AP4/TCPThread.h
+chrono
+-
+sleepCommand.h
+/home/vered/CLionProjects/AP4/sleepCommand.h
+bits/stdc++.h
+-
+
+>>>>>>> 816e099d781f2d12dc789c81db0cb4808e98d12e
 /home/vered/CLionProjects/AP4/TCPThread.h
 pthread.h
 -
@@ -78,11 +103,10 @@ string.h
 DataBase.h
 /home/vered/CLionProjects/AP4/DataBase.h
 
-/home/vered/CLionProjects/AP4/conditionParser.h
-DataBase.h
-/home/vered/CLionProjects/AP4/DataBase.h
-vector
+/home/vered/CLionProjects/AP4/sleepCommand.h
+chrono
 -
+<<<<<<< HEAD
 Condition.h
 /home/vered/CLionProjects/AP4/Condition.h
 
@@ -127,8 +151,12 @@ TCPThread.h
 /home/vered/CLionProjects/AP4/TCPThread.h
 
 /home/vered/CLionProjects/AP4/parser.h
+=======
+>>>>>>> 816e099d781f2d12dc789c81db0cb4808e98d12e
 DataBase.h
 /home/vered/CLionProjects/AP4/DataBase.h
+Shunting_Yard.h
+/home/vered/CLionProjects/AP4/Shunting_Yard.h
 
 /home/vered/CLionProjects/AP4/xmlLexer.h
 string

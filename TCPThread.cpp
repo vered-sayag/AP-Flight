@@ -69,7 +69,7 @@ void* thread_Connect(void* arg){
             double value = toSend.begin()->second;
 
             // creating the message
-            string message = "set " + path.substr(1,path.size()-2) + " " + to_string(value) + "\r\n";
+            string message = "set " + path+ " " + to_string(value) + "\r\n";
 
             ssize_t n;
 
@@ -190,7 +190,7 @@ void* thread_OpenDataserver(void* arg) {
                         params->data->conect();
                         //std::cout << "new data received: " << dataStr << std::endl;
                         setInputSymbols(dataStr, params->data);
-                        this_thread::sleep_for(chrono::milliseconds(params->NumToSec));
+                        //this_thread::sleep_for(chrono::milliseconds(1000/params->NumToSec));
                         dataStr = "";
                     }
                 }

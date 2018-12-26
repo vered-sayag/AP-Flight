@@ -18,7 +18,8 @@ void equalBindCommand::doCommand(int index, vector<string> lex) {
     } else {
 
         if (regex_match(lex[index + 1], regex("^\".*\"$"))) {
-            data->addBind(lex[index - 2], lex[index + 1]);
+
+            data->addBind(lex[index - 2], lex[index + 1].substr(1,lex[index + 1].size()-2) );
 
         } else {
             throw invalid_argument("invalid bind");

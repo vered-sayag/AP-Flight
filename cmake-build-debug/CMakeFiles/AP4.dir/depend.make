@@ -61,8 +61,11 @@ CMakeFiles/AP4.dir/Shunting_Yard.cpp.o: ../xmlLexer.h
 
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../Command.h
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../DataBase.h
+CMakeFiles/AP4.dir/TCPThread.cpp.o: ../Expression.h
+CMakeFiles/AP4.dir/TCPThread.cpp.o: ../Shunting_Yard.h
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../TCPThread.cpp
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../TCPThread.h
+CMakeFiles/AP4.dir/TCPThread.cpp.o: ../sleepCommand.h
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../xmlLexer.h
 
 CMakeFiles/AP4.dir/VarCommand.cpp.o: ../Command.h
@@ -114,10 +117,6 @@ CMakeFiles/AP4.dir/equalCommand.cpp.o: ../Shunting_Yard.h
 CMakeFiles/AP4.dir/equalCommand.cpp.o: ../equalCommand.cpp
 CMakeFiles/AP4.dir/equalCommand.cpp.o: ../equalCommand.h
 CMakeFiles/AP4.dir/equalCommand.cpp.o: ../xmlLexer.h
-
-CMakeFiles/AP4.dir/exitCommand.cpp.o: ../Command.h
-CMakeFiles/AP4.dir/exitCommand.cpp.o: ../exitCommand.cpp
-CMakeFiles/AP4.dir/exitCommand.cpp.o: ../exitCommand.h
 
 CMakeFiles/AP4.dir/lexer.cpp.o: ../lexer.cpp
 CMakeFiles/AP4.dir/lexer.cpp.o: ../lexer.h

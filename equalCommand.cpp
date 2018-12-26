@@ -11,17 +11,23 @@ void equalCommand:: doCommand(int index, vector <string> lex){
 
     if (lex[index+1].compare("bind")) {
         double  ans =shuntingYard(data, lex, index + 1)[0];
-        data->setSymbol(var,ans);
+        bool isBind = false;
         if (data->isBind(var)){
             data->pushSend(var,ans);
+            isBind=true;
         } else {
             // the binded variables to check for sending to the simulator
             vector<string> bindsVar = data->getBindVars(var);
             for (int i = 0; i < bindsVar.size(); ++i) {
                 if (data->isBind(bindsVar[i])){
                     data->pushSend(bindsVar[i],ans);
+                    isBind=true;
                     break;
                 }
+            }
+
+            if (!isBind){
+                data->setSymbol(var,ans);
             }
         }
     }

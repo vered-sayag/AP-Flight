@@ -167,7 +167,7 @@ void* thread_OpenDataserver(void* arg) {
                     {
                         params->data->conect();
                         setInputSymbols(dataStr, params->data);
-                        this_thread::sleep_for(chrono::milliseconds(1000/params->NumToSec));
+                        //this_thread::sleep_for(chrono::milliseconds(1000/params->NumToSec));
                         dataStr = "";
                     }
                 }

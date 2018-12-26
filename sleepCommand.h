@@ -1,6 +1,4 @@
-//
-// Created by vered on 22/12/18.
-//
+
 
 #ifndef AP4_SLEEPCOMMAND_H
 #define AP4_SLEEPCOMMAND_H

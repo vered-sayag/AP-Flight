@@ -1,6 +1,4 @@
-//
-// Created by vered on 20/12/18.
-//
+
 #include "parser.h"
 void parser(DataBase* d, vector <string> lex) {;
     vector <string> blockCommand = {"while", "if"};

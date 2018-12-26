@@ -5,17 +5,10 @@ CMakeFiles/AP4.dir/BlockCommand.cpp.o
  /home/vered/CLionProjects/AP4/BlockCommand.cpp
  /home/vered/CLionProjects/AP4/BlockCommand.h
  /home/vered/CLionProjects/AP4/Command.h
-CMakeFiles/AP4.dir/Condition.cpp.o
- /home/vered/CLionProjects/AP4/Command.h
- /home/vered/CLionProjects/AP4/Condition.cpp
- /home/vered/CLionProjects/AP4/Condition.h
- /home/vered/CLionProjects/AP4/DataBase.h
- /home/vered/CLionProjects/AP4/Expression.h
- /home/vered/CLionProjects/AP4/Shunting_Yard.h
- /home/vered/CLionProjects/AP4/xmlLexer.h
 CMakeFiles/AP4.dir/DataBase.cpp.o
  /home/vered/CLionProjects/AP4/BlockCommand.h
  /home/vered/CLionProjects/AP4/Command.h
+ /home/vered/CLionProjects/AP4/Condition.h
  /home/vered/CLionProjects/AP4/DataBase.cpp
  /home/vered/CLionProjects/AP4/DataBase.h
  /home/vered/CLionProjects/AP4/Expression.h
@@ -25,9 +18,11 @@ CMakeFiles/AP4.dir/DataBase.cpp.o
  /home/vered/CLionProjects/AP4/TCPThread.h
  /home/vered/CLionProjects/AP4/VarCommand.h
  /home/vered/CLionProjects/AP4/WhileCommand.h
+ /home/vered/CLionProjects/AP4/conditionParser.h
  /home/vered/CLionProjects/AP4/connectCommand.h
  /home/vered/CLionProjects/AP4/equalBindCommand.h
  /home/vered/CLionProjects/AP4/equalCommand.h
+ /home/vered/CLionProjects/AP4/parser.h
  /home/vered/CLionProjects/AP4/printCommand.h
  /home/vered/CLionProjects/AP4/sleepCommand.h
  /home/vered/CLionProjects/AP4/xmlLexer.h
@@ -62,11 +57,8 @@ CMakeFiles/AP4.dir/Shunting_Yard.cpp.o
 CMakeFiles/AP4.dir/TCPThread.cpp.o
  /home/vered/CLionProjects/AP4/Command.h
  /home/vered/CLionProjects/AP4/DataBase.h
- /home/vered/CLionProjects/AP4/Expression.h
- /home/vered/CLionProjects/AP4/Shunting_Yard.h
  /home/vered/CLionProjects/AP4/TCPThread.cpp
  /home/vered/CLionProjects/AP4/TCPThread.h
- /home/vered/CLionProjects/AP4/sleepCommand.h
  /home/vered/CLionProjects/AP4/xmlLexer.h
 CMakeFiles/AP4.dir/VarCommand.cpp.o
  /home/vered/CLionProjects/AP4/Command.h
@@ -123,12 +115,7 @@ CMakeFiles/AP4.dir/lexer.cpp.o
  /home/vered/CLionProjects/AP4/lexer.h
 CMakeFiles/AP4.dir/main.cpp.o
  /home/vered/CLionProjects/AP4/Command.h
- /home/vered/CLionProjects/AP4/Condition.h
  /home/vered/CLionProjects/AP4/DataBase.h
- /home/vered/CLionProjects/AP4/Expression.h
- /home/vered/CLionProjects/AP4/Shunting_Yard.h
- /home/vered/CLionProjects/AP4/TCPThread.h
- /home/vered/CLionProjects/AP4/conditionParser.h
  /home/vered/CLionProjects/AP4/lexer.h
  /home/vered/CLionProjects/AP4/main.cpp
  /home/vered/CLionProjects/AP4/parser.h

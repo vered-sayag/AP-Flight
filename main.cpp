@@ -1,14 +1,8 @@
 #include "DataBase.h"
-#include <iostream>
-#include "Expression.h"
 #include <string>
 #include <regex>
-#include <list>
 #include "lexer.h"
-#include "Shunting_Yard.h"
 #include "parser.h"
-#include "conditionParser.h"
-#include "TCPThread.h"
 
 int main(int numArg, char* argFiles[]) {
     if (numArg == 2) {

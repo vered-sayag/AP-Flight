@@ -1,7 +1,4 @@
-//
-// Created by vered on 24/12/18.
-//
-#include <stdexcept>
+
 #include "BlockCommand.h"
 
 vector<string> BlockCommand :: splitBlock(int index, vector <string> lex){

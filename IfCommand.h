@@ -1,6 +1,4 @@
-//
-// Created by vered on 20/12/18.
-//
+
 
 #ifndef AP3_IFCOMMAND_H
 #define AP3_IFCOMMAND_H
@@ -9,6 +7,9 @@
 #include "Command.h"
 #include "DataBase.h"
 #include "BlockCommand.h"
+#include "conditionParser.h"
+#include "parser.h"
+#include "Condition.h"
 
 class IfCommand : public BlockCommand {
     DataBase *data;

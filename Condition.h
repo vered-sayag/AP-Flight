@@ -1,6 +1,4 @@
-//
-// Created by vered on 24/12/18.
-//
+
 
 #ifndef AP4_CONDITION_H
 #define AP4_CONDITION_H

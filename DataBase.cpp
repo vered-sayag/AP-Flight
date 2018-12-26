@@ -1,6 +1,3 @@
-//
-// Created by vered on 21/12/18.
-//
 
 #include "DataBase.h"
 #include "equalBindCommand.h"

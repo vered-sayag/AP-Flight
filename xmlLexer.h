@@ -1,6 +1,3 @@
-//
-// Created by vered on 24/12/18.
-//
 
 #ifndef AP4_XMLLEXER_H
 #define AP4_XMLLEXER_H
@@ -12,6 +9,5 @@
 
 using namespace std;
 map<string, int> xmlLexer(string filename);
-
 
 #endif //AP4_XMLLEXER_H

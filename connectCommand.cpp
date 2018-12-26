@@ -1,15 +1,5 @@
-//
-// Created by vered on 20/12/18.
-//
 
-#include <pthread.h>
-#include <regex>
-#include <string>
 #include "connectCommand.h"
-#include "Shunting_Yard.h"
-
-
-using namespace std;
 
 void ConnectCommand::doCommand(int index, vector<string> lex) {
     if (!regex_match(lex[index + 1],

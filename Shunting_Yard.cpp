@@ -1,6 +1,4 @@
-//
-// Created by vered on 20/12/18.
-//
+
 
 #include "Shunting_Yard.h"
 

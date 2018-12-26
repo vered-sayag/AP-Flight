@@ -1,6 +1,4 @@
-//
-// Created by vered on 17/12/18.
-//
+
 
 #ifndef AP3_COMMAND_H
 #define AP3_COMMAND_H

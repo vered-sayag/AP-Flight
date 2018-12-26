@@ -1,24 +1,5 @@
-//
-// Created by vered on 19/12/18.
-//
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <iostream>
-#include <string>
-#include <vector>
-
-#include <netdb.h>
-#include <unistd.h>
-#include <netinet/in.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <regex>
 #include "TCPThread.h"
-#include <chrono>
-#include "sleepCommand.h"
-#include <bits/stdc++.h>
-using namespace std;
 
 void* thread_Connect(void* arg){
     int sockfd;
@@ -69,11 +50,7 @@ void* thread_Connect(void* arg){
             double value = toSend.begin()->second;
 
             // creating the message
-<<<<<<< HEAD
             string message = "set " + path+ " " + to_string(value) + "\r\n";
-=======
-            string message = "set " + path.substr(1,path.size()-2) + " " + to_string(value) + "\r\n";
->>>>>>> 816e099d781f2d12dc789c81db0cb4808e98d12e
 
             ssize_t n;
 
@@ -88,7 +65,6 @@ void* thread_Connect(void* arg){
     /* Now ask for a message from the user, this message
        * will be read by server
     */
-
 
 
     return nullptr;
@@ -151,21 +127,19 @@ void* thread_OpenDataserver(void* arg) {
         exit(1);
     }
 
-//    std::cout << "listening..." << std::endl;
 
     //start listening for the clients using the main socket
     listen(socketFd,1);
     clilen = sizeof(cli_addr);
 
-    cout<<"try to conect"<<endl;
+
     //accept actual connection from the client
     newsockfd = accept(socketFd, (struct sockaddr*)&cli_addr, (socklen_t*)&clilen);
-    cout<<"conect"<<endl;
+
 
 
     params->data->addSocket(newsockfd);
 
-//    std::cout << "connected to client!" << std::endl;
 
     //if connections with the client failed
     if (newsockfd < 0) {
@@ -192,13 +166,8 @@ void* thread_OpenDataserver(void* arg) {
                     if (dataStr.length() > 0)
                     {
                         params->data->conect();
-                        //std::cout << "new data received: " << dataStr << std::endl;
                         setInputSymbols(dataStr, params->data);
-<<<<<<< HEAD
-                        //this_thread::sleep_for(chrono::milliseconds(1000/params->NumToSec));
-=======
-                        this_thread::sleep_for(chrono::milliseconds(params->NumToSec));
->>>>>>> 816e099d781f2d12dc789c81db0cb4808e98d12e
+                        this_thread::sleep_for(chrono::milliseconds(1000/params->NumToSec));
                         dataStr = "";
                     }
                 }
@@ -207,7 +176,6 @@ void* thread_OpenDataserver(void* arg) {
         }
         else
         {
-//            std::cout << "Socket closed or socket error!" << std::endl;
             break;
         }
     }

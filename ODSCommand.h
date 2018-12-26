@@ -1,6 +1,3 @@
-//
-// Created by vered on 20/12/18.
-//
 
 #ifndef AP3_ODS_H
 #define AP3_ODS_H
@@ -25,4 +22,4 @@ public:
 };
 
 
-#endif //AP3_ODS_H
+#endif

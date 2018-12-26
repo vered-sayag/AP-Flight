@@ -1,6 +1,4 @@
-//
-// Created by vered on 21/12/18.
-//
+
 
 #include "VarCommand.h"
 

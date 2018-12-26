@@ -1,6 +1,4 @@
-//
-// Created by vered on 20/12/18.
-//
+
 
 #ifndef AP3_EQUALBINDCOMMAND_H
 #define AP3_EQUALBINDCOMMAND_H

@@ -97,9 +97,6 @@
 		<Unit filename="/home/vered/CLionProjects/AP4/Command.h">
 			<Option target="AP4"/>
 		</Unit>
-		<Unit filename="/home/vered/CLionProjects/AP4/Condition.cpp">
-			<Option target="AP4"/>
-		</Unit>
 		<Unit filename="/home/vered/CLionProjects/AP4/Condition.h">
 			<Option target="AP4"/>
 		</Unit>

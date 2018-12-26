@@ -1,6 +1,3 @@
-//
-// Created by vered on 20/12/18.
-//
 
 #ifndef AP3_EQUALCOMMAND_H
 #define AP3_EQUALCOMMAND_H

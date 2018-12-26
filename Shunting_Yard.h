@@ -1,6 +1,4 @@
-//
-// Created by vered on 20/12/18.
-//
+
 
 #ifndef AP3_SHUNTING_YARD_H
 #define AP3_SHUNTING_YARD_H
@@ -22,4 +20,4 @@ double precedence(char op);
 double evaluate(const string &tokens);
 
 
-#endif //AP3_SHUNTING_YARD_H
+#endif

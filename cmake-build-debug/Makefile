@@ -150,33 +150,6 @@ BlockCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/AP4.dir/build.make CMakeFiles/AP4.dir/BlockCommand.cpp.s
 .PHONY : BlockCommand.cpp.s
 
-Condition.o: Condition.cpp.o
-
-.PHONY : Condition.o
-
-# target to build an object file
-Condition.cpp.o:
-	$(MAKE) -f CMakeFiles/AP4.dir/build.make CMakeFiles/AP4.dir/Condition.cpp.o
-.PHONY : Condition.cpp.o
-
-Condition.i: Condition.cpp.i
-
-.PHONY : Condition.i
-
-# target to preprocess a source file
-Condition.cpp.i:
-	$(MAKE) -f CMakeFiles/AP4.dir/build.make CMakeFiles/AP4.dir/Condition.cpp.i
-.PHONY : Condition.cpp.i
-
-Condition.s: Condition.cpp.s
-
-.PHONY : Condition.s
-
-# target to generate assembly for a file
-Condition.cpp.s:
-	$(MAKE) -f CMakeFiles/AP4.dir/build.make CMakeFiles/AP4.dir/Condition.cpp.s
-.PHONY : Condition.cpp.s
-
 DataBase.o: DataBase.cpp.o
 
 .PHONY : DataBase.o
@@ -648,9 +621,6 @@ help:
 	@echo "... BlockCommand.o"
 	@echo "... BlockCommand.i"
 	@echo "... BlockCommand.s"
-	@echo "... Condition.o"
-	@echo "... Condition.i"
-	@echo "... Condition.s"
 	@echo "... DataBase.o"
 	@echo "... DataBase.i"
 	@echo "... DataBase.s"

@@ -5,16 +5,9 @@ CMakeFiles/AP4.dir/BlockCommand.cpp.o: ../BlockCommand.cpp
 CMakeFiles/AP4.dir/BlockCommand.cpp.o: ../BlockCommand.h
 CMakeFiles/AP4.dir/BlockCommand.cpp.o: ../Command.h
 
-CMakeFiles/AP4.dir/Condition.cpp.o: ../Command.h
-CMakeFiles/AP4.dir/Condition.cpp.o: ../Condition.cpp
-CMakeFiles/AP4.dir/Condition.cpp.o: ../Condition.h
-CMakeFiles/AP4.dir/Condition.cpp.o: ../DataBase.h
-CMakeFiles/AP4.dir/Condition.cpp.o: ../Expression.h
-CMakeFiles/AP4.dir/Condition.cpp.o: ../Shunting_Yard.h
-CMakeFiles/AP4.dir/Condition.cpp.o: ../xmlLexer.h
-
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../BlockCommand.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../Command.h
+CMakeFiles/AP4.dir/DataBase.cpp.o: ../Condition.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../DataBase.cpp
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../DataBase.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../Expression.h
@@ -24,9 +17,11 @@ CMakeFiles/AP4.dir/DataBase.cpp.o: ../Shunting_Yard.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../TCPThread.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../VarCommand.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../WhileCommand.h
+CMakeFiles/AP4.dir/DataBase.cpp.o: ../conditionParser.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../connectCommand.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../equalBindCommand.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../equalCommand.h
+CMakeFiles/AP4.dir/DataBase.cpp.o: ../parser.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../printCommand.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../sleepCommand.h
 CMakeFiles/AP4.dir/DataBase.cpp.o: ../xmlLexer.h
@@ -61,11 +56,8 @@ CMakeFiles/AP4.dir/Shunting_Yard.cpp.o: ../xmlLexer.h
 
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../Command.h
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../DataBase.h
-CMakeFiles/AP4.dir/TCPThread.cpp.o: ../Expression.h
-CMakeFiles/AP4.dir/TCPThread.cpp.o: ../Shunting_Yard.h
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../TCPThread.cpp
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../TCPThread.h
-CMakeFiles/AP4.dir/TCPThread.cpp.o: ../sleepCommand.h
 CMakeFiles/AP4.dir/TCPThread.cpp.o: ../xmlLexer.h
 
 CMakeFiles/AP4.dir/VarCommand.cpp.o: ../Command.h
@@ -122,12 +114,7 @@ CMakeFiles/AP4.dir/lexer.cpp.o: ../lexer.cpp
 CMakeFiles/AP4.dir/lexer.cpp.o: ../lexer.h
 
 CMakeFiles/AP4.dir/main.cpp.o: ../Command.h
-CMakeFiles/AP4.dir/main.cpp.o: ../Condition.h
 CMakeFiles/AP4.dir/main.cpp.o: ../DataBase.h
-CMakeFiles/AP4.dir/main.cpp.o: ../Expression.h
-CMakeFiles/AP4.dir/main.cpp.o: ../Shunting_Yard.h
-CMakeFiles/AP4.dir/main.cpp.o: ../TCPThread.h
-CMakeFiles/AP4.dir/main.cpp.o: ../conditionParser.h
 CMakeFiles/AP4.dir/main.cpp.o: ../lexer.h
 CMakeFiles/AP4.dir/main.cpp.o: ../main.cpp
 CMakeFiles/AP4.dir/main.cpp.o: ../parser.h

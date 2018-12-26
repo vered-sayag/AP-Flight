@@ -1,6 +1,4 @@
-//
-// Created by vered on 21/12/18.
-//
+
 
 #ifndef AP4_VARCOMMAND_H
 #define AP4_VARCOMMAND_H

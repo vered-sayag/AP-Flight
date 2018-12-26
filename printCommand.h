@@ -1,6 +1,3 @@
-//
-// Created by vered on 22/12/18.
-//
 
 #ifndef AP4_PRINTCOMMAND_H
 #define AP4_PRINTCOMMAND_H

@@ -1,6 +1,4 @@
-//
-// Created by vered on 22/12/18.
-//
+
 
 #include "printCommand.h"
 

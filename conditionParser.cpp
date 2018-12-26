@@ -1,10 +1,7 @@
-//
-// Created by vered on 23/12/18.
-//
+
 
 #include "conditionParser.h"
-#include "Shunting_Yard.h"
-#include <vector>
+
 
 
 typedef enum {

@@ -1,6 +1,4 @@
-//
-// Created by vered on 19/12/18.
-//
+
 
 #ifndef AP3_OPENDATASERVERTHREAD_H
 #define AP3_OPENDATASERVERTHREAD_H
@@ -9,14 +7,19 @@
 #include <string>
 #include <unistd.h>
 #include <stdio.h>
-#include <sys/socket.h>
-#include <stdlib.h>
-#include <netinet/in.h>
-#include <string.h>
 #include "DataBase.h"
-
+#include <stdlib.h>
+#include <iostream>
+#include <vector>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <regex>
+#include <chrono>
+#include <bits/stdc++.h>
 
 using namespace std;
+
 
 
 struct ConnectParams
@@ -39,4 +42,4 @@ vector <string> splitByComma(string str);
 void setInputSymbols(const string &line, DataBase *data);
 
 
-#endif //AP3_OPENDATASERVERTHREAD_H
+#endif //AP4_OPENDATASERVERTHREAD_H

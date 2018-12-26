@@ -1,6 +1,3 @@
-//
-// Created by vered on 17/12/18.
-//
 
 #include "lexer.h"
 

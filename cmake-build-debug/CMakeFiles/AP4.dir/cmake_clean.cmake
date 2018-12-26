@@ -17,7 +17,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/AP4.dir/conditionParser.cpp.o"
   "CMakeFiles/AP4.dir/BlockCommand.cpp.o"
   "CMakeFiles/AP4.dir/Condition.cpp.o"
-  "CMakeFiles/AP4.dir/exitCommand.cpp.o"
   "CMakeFiles/AP4.dir/xmlLexer.cpp.o"
   "AP4.pdb"
   "AP4"

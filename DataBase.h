@@ -16,14 +16,14 @@
 #include <regex>
 #include "xmlLexer.h"
 #include "Command.h"
-
+#include <list>
 using namespace std;
 
 class DataBase {
     map<string, Command *> commands;
     map<string, string> binds;
     map<string, double> symbols;
-    map<string, double> send;
+    list<map<string, double>> send;
     map<string, int> xmlSymbol;
     map<string, vector<string>> bindsVar;
     vector<int> sockets;
@@ -84,7 +84,11 @@ public:
 
     map<string, string>::iterator getBindIterEnd() { return binds.end(); }
 
-    void pushSend(const string &key, double value) { send[key] = value; }
+    void pushSend(const string &key, double value) {
+        map<string,double > temp;
+        temp[key] = value;
+        send.push_back(temp);
+    }
 
     map<string, double> getSend();
 

@@ -15,7 +15,9 @@
 #include <sys/socket.h>
 #include <regex>
 #include "TCPThread.h"
-
+#include <chrono>
+#include "sleepCommand.h"
+#include <bits/stdc++.h>
 using namespace std;
 
 void* thread_Connect(void* arg){
@@ -67,7 +69,7 @@ void* thread_Connect(void* arg){
             double value = toSend.begin()->second;
 
             // creating the message
-            string message = "set " + path + " " + to_string(value) + "\r\n";
+            string message = "set " + path.substr(1,path.size()-2) + " " + to_string(value) + "\r\n";
 
             ssize_t n;
 
@@ -148,11 +150,14 @@ void* thread_OpenDataserver(void* arg) {
 //    std::cout << "listening..." << std::endl;
 
     //start listening for the clients using the main socket
-    listen(socketFd, params->NumToSec);
+    listen(socketFd,1);
     clilen = sizeof(cli_addr);
 
+    cout<<"try to conect"<<endl;
     //accept actual connection from the client
     newsockfd = accept(socketFd, (struct sockaddr*)&cli_addr, (socklen_t*)&clilen);
+    cout<<"conect"<<endl;
+
 
     params->data->addSocket(newsockfd);
 
@@ -164,7 +169,7 @@ void* thread_OpenDataserver(void* arg) {
         exit(1);
     }
 
-    int notApend =true;
+
     string dataStr;
 
     while(true)
@@ -172,10 +177,6 @@ void* thread_OpenDataserver(void* arg) {
         char buf[1024];
         int numBytesRead = recv(newsockfd, buf, sizeof(buf), 0);
 
-        if( notApend) {
-            params->data->conect();
-            notApend= false;
-        }
 
         if (numBytesRead > 0)
         {
@@ -186,9 +187,10 @@ void* thread_OpenDataserver(void* arg) {
                 {
                     if (dataStr.length() > 0)
                     {
+                        params->data->conect();
                         //std::cout << "new data received: " << dataStr << std::endl;
                         setInputSymbols(dataStr, params->data);
-
+                        this_thread::sleep_for(chrono::milliseconds(params->NumToSec));
                         dataStr = "";
                     }
                 }

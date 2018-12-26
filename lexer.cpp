@@ -57,6 +57,8 @@ vector<string> lexer(string filename) {
             }
             output1.clear();
         }
+    }else{
+        throw invalid_argument("cant open file " + filename);
     }
     myfile.close();
     return out;

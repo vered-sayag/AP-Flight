@@ -4,6 +4,11 @@
 void ODSCommand::doCommand(int index, vector <string> lex) {
 
     vector <double> syPort = shuntingYard(data, lex, index + 1);
+
+    if(!lex[syPort[1] + 1].compare(",")){
+        syPort[1]++;
+    }
+
     vector <double> sySec = shuntingYard(data, lex, syPort[1] + 1);
 
     struct openDataServerParams *params;

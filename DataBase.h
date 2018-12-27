@@ -97,11 +97,12 @@ public:
     bool sendNotEmpty() { return !send.empty(); }
 
     ~DataBase() {
-	closeSockets();       
-	for (map<string, Command *>::iterator it = commands.begin(); it != commands.end(); ++it) {
+        closeSockets();
+        for (map<string, Command *>::iterator it = commands.begin(); it != commands.end(); ++it) {
             delete (it->second);
         }
         pthread_mutex_destroy(&mutex);
+
     }
 };
 

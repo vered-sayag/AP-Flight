@@ -74,6 +74,7 @@ vector <string> splitByComma(string str) {
    vector <string> output;
     regex r("[^,]+");
     std::smatch m;
+    str= str.substr(0,str.size()-2);
     while (regex_search(str, m, r)) {
         string s2 = m[0];
         output.push_back(s2);

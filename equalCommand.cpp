@@ -6,6 +6,10 @@ void equalCommand:: doCommand(int index, vector <string> lex){
     if (index<=0 || index>= lex.size()-1){
         throw invalid_argument("invalid =");
     }
+    if(!data->isSymbol(lex[index - 1])){
+        throw invalid_argument("invalid =");
+    }
+
 
     string var = lex[index - 1];
 

@@ -4,9 +4,13 @@
 void equalBindCommand::doCommand(int index, vector<string> lex) {
 
 
-    if ((index <= 1 || index >= lex.size() - 1) &&
-        !lex[index - 1].compare("=")
-        && data->isSymbol(lex[index - 2])) {
+    if (index <= 1 || index >= lex.size() - 1){
+        throw invalid_argument("invalid bind");
+    }
+    if(lex[index - 1].compare("=")){
+        throw invalid_argument("invalid bind");
+    }
+    if(!data->isSymbol(lex[index - 2])){
         throw invalid_argument("invalid bind");
     }
 

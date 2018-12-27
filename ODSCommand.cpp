@@ -2,11 +2,18 @@
 #include "ODSCommand.h"
 
 void ODSCommand::doCommand(int index, vector <string> lex) {
+    if (index > lex.size() - 3) {
+        throw invalid_argument("Invalid argument to open data server");
+    }
 
     vector <double> syPort = shuntingYard(data, lex, index + 1);
 
     if(!lex[syPort[1] + 1].compare(",")){
         syPort[1]++;
+    }
+
+    if (syPort[1] > lex.size() - 2) {
+        throw invalid_argument("Invalid argument to open data server");
     }
 
     vector <double> sySec = shuntingYard(data, lex, syPort[1] + 1);

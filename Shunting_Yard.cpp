@@ -142,7 +142,7 @@ double evaluate(const string &tokens) {
             bool afterPoint = false;
 
             if (tokens[i] == '-') {
-                isNeg = -1;
+                isNeg *= -1;
                 continue;
             }
 

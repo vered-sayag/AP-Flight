@@ -74,9 +74,7 @@ public:
         pthread_mutex_unlock(&mutex);
     }
 
-    void addBind(const string &key, const string &value) {
-        binds[key] = value;
-    }
+    void addBind(const string &key, const string &value) { binds[key] = value; }
 
     string getBind(const string &key) { return binds[key]; }
 
